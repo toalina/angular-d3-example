@@ -76,4 +76,8 @@ export class BarChartComponent implements OnChanges {
         .attr('width', x.bandwidth())
         .attr('height', d => contentHeight - y(d.frequency));
   }
+
+  onResize() {
+    this.createChart();
+  }
 }
