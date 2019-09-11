@@ -1,0 +1,25 @@
+
+body {
+    font-family: Arial, Helvetica, sans-serif
+}
+
+app-bar-chart {
+    width: 50%;
+  }
+
+#chart {
+    height: inherit;
+    width: inherit;
+}
+
+.bar {
+    fill: steelblue;
+}
+
+.bar:hover {
+    fill: brown;
+}
+
+.axis--x path {
+    display: none;
+}
