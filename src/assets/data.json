@@ -1,106 +1,132 @@
 [
 	{
 		"letter": "A",
-		"frequency": 0.08167
+		"frequency": 0.08167,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "B",
-		"frequency": 0.01492
+		"frequency": 0.01492,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "C",
-		"frequency": 0.02782
+		"frequency": 0.02782,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "D",
-		"frequency": 0.04253
+		"frequency": 0.04253,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "E",
-		"frequency": 0.12702
+		"frequency": 0.12702,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "F",
-		"frequency": 0.02288
+		"frequency": 0.02288,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "G",
-		"frequency": 0.02015
+		"frequency": 0.02015,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "H",
-		"frequency": 0.06094
+		"frequency": 0.06094,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "I",
-		"frequency": 0.06966
+		"frequency": 0.06966,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "J",
-		"frequency": 0.00153
+		"frequency": 0.00153,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "K",
-		"frequency": 0.00772
+		"frequency": 0.00772,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "L",
-		"frequency": 0.04025
+		"frequency": 0.04025,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "M",
-		"frequency": 0.02406
+		"frequency": 0.02406,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "N",
-		"frequency": 0.06749
+		"frequency": 0.06749,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "O",
-		"frequency": 0.07507
+		"frequency": 0.07507,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "P",
-		"frequency": 0.01929
+		"frequency": 0.01929,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "Q",
-		"frequency": 0.00095
+		"frequency": 0.00095,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "R",
-		"frequency": 0.05987
+		"frequency": 0.05987,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "S",
-		"frequency": 0.06327
+		"frequency": 0.06327,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "T",
-		"frequency": 0.09056
+		"frequency": 0.09056,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "U",
-		"frequency": 0.02758
+		"frequency": 0.02758,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "V",
-		"frequency": 0.00978
+		"frequency": 0.00978,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "W",
-		"frequency": 0.0236
+		"frequency": 0.0236,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "X",
-		"frequency": 0.0015
+		"frequency": 0.0015,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "Y",
-		"frequency": 0.01974
+		"frequency": 0.01974,
+		"color": "#ddadad"
 	},
 	{
 		"letter": "Z",
-		"frequency": 0.00074
+		"frequency": 0.00074,
+		"color": "#ddadad"
 	}
 ]
