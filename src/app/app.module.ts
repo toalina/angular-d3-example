@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { BarChartComponent } from './bar-chart/bar-chart.component';
 import { HttpClientModule } from '@angular/common/http';
 import { BubbleChartComponent } from './bubble-chart/bubble-chart.component';
+import { TimelineComponent } from './timeline/timeline.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     BarChartComponent,
-    BubbleChartComponent
+    BubbleChartComponent,
+    TimelineComponent
   ],
   imports: [
     BrowserModule,

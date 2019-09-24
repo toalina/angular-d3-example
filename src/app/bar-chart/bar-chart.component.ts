@@ -1,6 +1,6 @@
 import { Component, ElementRef, Input, OnChanges, ViewChild, ViewEncapsulation } from '@angular/core';
 import * as d3 from 'd3';
-import { DataModel } from 'src/app/data/data.model';
+import { BubbleDataModel } from 'src/app/data/data.model';
 
 @Component({
   selector: 'app-bar-chart',
@@ -13,7 +13,7 @@ export class BarChartComponent implements OnChanges {
   private chartContainer: ElementRef;
 
   @Input()
-  data: DataModel[];
+  data: BubbleDataModel[];
 
   margin = {top: 20, right: 20, bottom: 30, left: 40};
 
