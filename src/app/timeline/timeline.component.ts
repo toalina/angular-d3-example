@@ -41,9 +41,11 @@ export class TimelineComponent implements OnChanges {
     d3.select('svg1').remove();
     const data = this.data;
 
-    const chart = d3timelines.timelines();
+    const chart = d3timelines.timelines().stack().click(function (d, i, datum) {
+      alert(datum.label);
+    });
 
-    const svg1 = d3.select('#timeline').append('svg').attr('width', 500).attr('height', 500).datum(data).call(chart);
+    const svg1 = d3.select('#timeline').append('svg').attr('width', 500).attr('height', 800).datum(data).call(chart);
   }
 }
 

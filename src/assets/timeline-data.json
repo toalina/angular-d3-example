@@ -1,20 +1,38 @@
 [
     {
-        "label": "person a", 
+        "label": "a", 
         "times": [
-            {"starting_time": 1355752800000, "ending_time": 1355759900000}
+            {"starting_time": 1355752800000, "ending_time": 1355759900000},
+            {"starting_time": 1355767900000, "ending_time": 1355774400000}
         ]
     },
     {
-        "label": "person b", 
+        "label": "b", 
         "times": [
             {"starting_time": 1355759910000, "ending_time": 1355761900000}
         ]
     },
     {
-        "label": "person c", 
+        "label": "c", 
         "times": [
             {"starting_time": 1355761910000, "ending_time": 1355763910000}
         ]
+    },
+    {
+        "label": "person d",
+        "times": [
+        {"starting_time": 1355752800000, "display": "circle"},
+        {"starting_time": 1355767900000, "ending_time": 1355774400000}]
+    },
+    {
+        "label": "person e",
+        "times": [
+        {"starting_time": 1355759910000, "display":"circle"}
+        ]
+    },
+    {
+        "label": "person f",
+        "times": [
+        {"starting_time": 1355761910000, "ending_time": 1355763910000}]
     }
 ]
