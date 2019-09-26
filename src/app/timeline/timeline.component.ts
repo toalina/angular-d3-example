@@ -15,16 +15,6 @@ export class TimelineComponent implements OnChanges {
 
   @Input() data: TimelineDataModel[];
 
-  // private data: any = [
-  //     {label: 'person a', times: [
-  //         {starting_time: 1355752800000, ending_time: 1355759900000},
-  //         {starting_time: 1355767900000, ending_time: 1355774400000}]},
-  //     {label: 'person b', times: [
-  //         {starting_time: 1355759910000, ending_time: 1355761900000}]},
-  //     {label: 'person c', times: [
-  //         {starting_time: 1355761910000, ending_time: 1355763910000}]},
-  //     ];
-
   // private chart: any;
   constructor() {
     console.log(this.data)
@@ -41,11 +31,17 @@ export class TimelineComponent implements OnChanges {
     d3.select('svg1').remove();
     const data = this.data;
 
-    const chart = d3timelines.timelines().stack().click(function (d, i, datum) {
-      alert(datum.label);
-    });
+    const chart = d3timelines.timelines()
+      .margin({left: 80, right: 0, top: 50, bottom: 0})
+      .stack()
+      .showTimeAxisTick()
+      .click(function (d, i, datum) {
+        alert(datum.label);
+      });
 
-    const svg1 = d3.select('#timeline').append('svg').attr('width', 500).attr('height', 800).datum(data).call(chart);
+    const svg1 = d3.select('#timeline').append('svg').attr('width', 800).attr('height', 300).datum(data).call(chart);
+
+
   }
 }
 
