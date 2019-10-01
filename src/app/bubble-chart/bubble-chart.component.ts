@@ -17,8 +17,7 @@ export class BubbleChartComponent implements OnChanges {
   margin = {top: 20, right: 20, bottom: 30, left: 40};
 
   constructor() {
-    console.log(this.data)
-   }
+  }
 
   ngOnChanges(): void {
     if (!this.data) { return; }

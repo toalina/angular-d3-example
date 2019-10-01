@@ -4,18 +4,19 @@ export interface BubbleDataModel {
     color: string;
 }
 
+interface StartEndTimes {
+    starting_time: number,
+    ending_time: number,
+    display: string
+}
+
 export interface TimelineDataModel {
     label: string,
     times: Array<StartEndTimes>;
     // times: { starting_time: number, ending_time: number }[]
 }
 
-interface StartEndTimes {
-    starting_time: number,
-    ending_time: number
-}
-
-export class IncidentDataModel {
+export interface IncidentDataModel {
     address: string;
     type: string;
     datetime: string | Date;
@@ -23,9 +24,13 @@ export class IncidentDataModel {
     longitude: number;
     report_location: {
         type: "Point",
-        coordimates: [
-            number, number
-        ]
+        coordinates: number[];
     };
     incident_number: string;
+    times: Array<StartEndTimes>;
+    // label: string;
+    // times: { starting_time: number, ending_time: number, display: string }[]
 }
+
+
+

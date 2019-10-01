@@ -1,4 +1,4 @@
-import { Component, OnInit, OnChanges, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnChanges, Input, ViewChild } from '@angular/core';
 import * as d3 from 'd3';
 import * as d3timelines from 'd3-timelines';
 import { TimelineDataModel } from 'src/app/data/data.model';
@@ -10,15 +10,10 @@ import { TimelineDataModel } from 'src/app/data/data.model';
 })
 
 export class TimelineComponent implements OnChanges {
-  @ViewChild('timelineChart')
-  // private chartContainer: ElementRef;
-
+  @ViewChild('timeline')
   @Input() data: TimelineDataModel[];
 
-  // private chart: any;
-  constructor() {
-    console.log(this.data)
-  }
+  constructor() {}
 
   ngOnChanges(): void {
     if (!this.data) { return; }
@@ -34,14 +29,9 @@ export class TimelineComponent implements OnChanges {
     const chart = d3timelines.timelines()
       .margin({left: 80, right: 0, top: 50, bottom: 0})
       .stack()
-      .showTimeAxisTick()
-      .click(function (d, i, datum) {
-        alert(datum.label);
-      });
+      .showTimeAxisTick();
 
     const svg1 = d3.select('#timeline').append('svg').attr('width', 800).attr('height', 300).datum(data).call(chart);
-
-
   }
 }
 
